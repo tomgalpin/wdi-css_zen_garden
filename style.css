@@ -1,3 +1,7 @@
+#css-zen-garden {
+  background-image: url('images/background.gif');
+}
+
 .page-wrapper {
   width: 600px;
   margin: -10px auto;
@@ -188,4 +192,71 @@ footer {
   background-color: white;
 }
 
+@media screen and (max-width: 615px) {
+  .page-wrapper {
+    width: 400px;
+    overflow: hidden;
+  }
 
+  #zen-intro {
+    background-color: #e74c3c;
+  }
+
+  header {
+    background-size: 0;
+    height: 100px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+  }
+
+  header h1,
+  header h2 {
+    display: block;
+    text-align: center;
+    color: white;
+  }
+
+  #zen-summary {
+    float: none;
+    width: 100%;
+    background-size: 0;
+    height: 80px;
+  }
+
+  #zen-summary p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  #zen-summary p:first-child {
+    margin-top: 15px;
+  }
+
+  #zen-preamble {
+    height: 200px;
+  }
+
+  .sidebar {
+    margin-top: 2px;
+    height: 620px;
+    display: none;
+    font-size: 10px;
+    width: 100%;
+    display: block;
+    background-color: #FFAE40;
+  }
+
+  #design-selection,
+  #design-archives,
+  #zen-resources {
+    padding-top: 40px;
+  }
+
+  #design-selection a,
+  #design-archives a,
+  #zen-resources {
+    font-size: 15px;
+  }
+
+
+}
